@@ -1,0 +1,25 @@
+{
+	"name" : "Zombeez",
+	"description" : "Zombie-Slaying Game",
+	"version" : "0.0.2",
+	"manifest_version" : 2,
+	"content_security_policy" : "img-src 'self'; object-src 'self'",
+	"app" : {
+		"background" : {
+			"scripts" : ["scripts/background.js"]
+		}
+	},
+	"icons" : {
+		"16" : "assets/icon16.png",
+		"32" : "assets/icon32.png"
+	},
+	"permissions": [
+		"storage",
+		{"fileSystem": [
+		    "retainEntries",
+		    "write",
+		    "directory"
+		]},
+		"fullscreen"
+	]
+}
